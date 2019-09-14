@@ -1,0 +1,38 @@
+{
+  "name": "fastify-routes-measure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "node": ">=10.16.3",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard | snazzy && tap test.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "standard",
+      "pre-push": "npm test"
+    }
+  },
+  "keywords": [
+    "perf",
+    "perf_hooks",
+    "measure",
+    "stats",
+    "apm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okamuuu/fastify-routes-measure.git"
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.6.0",
+    "performance-measure": "^1.0.1"
+  },
+  "devDependencies": {
+    "fastify": "^2.8.0",
+    "husky": "^3.0.5",
+    "snazzy": "^8.0.0",
+    "standard": "^14.2.0",
+    "tap": "^14.6.2"
+  }
+}
